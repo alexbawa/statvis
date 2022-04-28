@@ -12,7 +12,8 @@ class MainNav extends React.Component {
     <BrowserRouter>
       <Route exact path="/" render={(p) => {
         window.scroll(0,0);
-        
+        <Redirect to="/"/>
+        // return <Home>
       }}/>
     </BrowserRouter>
   }
