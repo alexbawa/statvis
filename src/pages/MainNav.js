@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import HomePage from "../pages/HomePage";
 
 class MainNav extends React.Component {
   constructor(props) {
@@ -9,13 +11,9 @@ class MainNav extends React.Component {
   }
 
   render() {
-    <BrowserRouter>
-      <Route exact path="/" render={(p) => {
-        window.scroll(0,0);
-        <Redirect to="/"/>
-        // return <Home>
-      }}/>
-    </BrowserRouter>
+    return (
+      <HomePage/>
+    );
   }
 }
 
